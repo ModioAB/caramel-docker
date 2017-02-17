@@ -1,4 +1,5 @@
 FROM registry.gitlab.com/modioab/base-image:fedora-24-python-latest
+LABEL maintainer "spider@modio.se"
 
 COPY caramel.ini /srv/webapp/caramel.ini
 COPY run.sh /usr/bin/caramel

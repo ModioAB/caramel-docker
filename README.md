@@ -15,5 +15,16 @@ OU=OrgUnit
 
 To adjust the root ca.
 
+To run, it needs:
+A port (80 by default)
+A volume to store database and certs on
+
+```
+docker run -t \
+	-p 80:80 \
+	--volume=/srv/caramel:/data:rw modioab/caramel \
+	--name caramel\
+	modioab/caramel
+``` 
 
 
