@@ -4,7 +4,7 @@ LABEL maintainer "spider@modio.se"
 COPY caramel.ini /srv/webapp/caramel.ini
 COPY run.sh /usr/bin/caramel
 
-RUN ["pip3", "install", "git+https://github.com/ModioAB/caramel.git@SAN-extension"]
+RUN ["pip3", "install", "https://github.com/ModioAB/caramel/archive/SAN-extension.zip"]
 
 VOLUME ["/data"]
 WORKDIR /data
